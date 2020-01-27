@@ -1,0 +1,8 @@
+# Test Automation ignores
+.DS_Store
+.DS_Store*
+node_modules/
+reports/
+allure-reports/
+errorShots/
+package-lock.json
