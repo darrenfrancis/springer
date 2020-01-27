@@ -1,6 +1,6 @@
 import Page from './Page'
 
-class Home_Page extends Page {
+class SearchResults_Page extends Page {
 	constructor() {
 		super()
 	}
@@ -9,8 +9,8 @@ class Home_Page extends Page {
 	/********* Selectors *********/
 	/*****************************/
 
-	get searchInput() { return $("#query");}
-	get searchButton() { return $("#search");}
+	get searchResultFirst() { return $("#results-list li:nth-child(1) h2 a");}
+	get filterArticle() { return $ ("span*=Article")}
 
 	/*****************************/
 	/********** Methods **********/
@@ -18,4 +18,4 @@ class Home_Page extends Page {
 
 }
 
-export default new Home_Page()
+export default new SearchResults_Page()

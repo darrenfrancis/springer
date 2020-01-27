@@ -1,6 +1,6 @@
 import Page from './Page'
 
-class Home_Page extends Page {
+class Order_Page extends Page {
 	constructor() {
 		super()
 	}
@@ -9,8 +9,7 @@ class Home_Page extends Page {
 	/********* Selectors *********/
 	/*****************************/
 
-	get searchInput() { return $("#query");}
-	get searchButton() { return $("#search");}
+	get cartItems() { return $(".your-items");}
 
 	/*****************************/
 	/********** Methods **********/
@@ -18,4 +17,4 @@ class Home_Page extends Page {
 
 }
 
-export default new Home_Page()
+export default new Order_Page()
